@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  - '16'
+cache:
+  directories:
+    - xylsh_blog_source/node_modules
+before_install:
+  - git config  https://github.com/weizhimiao/xylsh_blog_source.git xylsh_blog_source --recursive
+  - npm install -g hexo-cli
+install:
+  - cd xylsh_blog_source
+  - npm install
+script:
+  - pwd
+  - hexo clean
+  - export HEXO_ALGOLIA_INDEXING_KEY=$HEXO_ALGOLIA_INDEXING_KEY
+  - hexo algolia
+  - hexo generate --silent
+after_success:
+  - ll
+branches:
+  only:
+    - master
