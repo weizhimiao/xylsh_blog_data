@@ -1,13 +1,9 @@
 language: node_js
 node_js:
   - '16'
-
-git:
-  clone: false
 branches:
   only:
     - master
-
 cache:
   directories:
     - xylsh_blog_source/node_modules
