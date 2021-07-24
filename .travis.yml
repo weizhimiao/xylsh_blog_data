@@ -5,6 +5,7 @@ cache:
   directories:
     - xylsh_blog_source/node_modules
 before_install:
+  - rm -rf xylsh_blog_source
   - git clone  https://github.com/weizhimiao/xylsh_blog_source.git xylsh_blog_source --recursive
   - npm install -g hexo-cli
 install:
@@ -13,7 +14,6 @@ install:
 script:
   - pwd
   - hexo clean
-  - export HEXO_ALGOLIA_INDEXING_KEY=$HEXO_ALGOLIA_INDEXING_KEY
   - hexo algolia
   - hexo generate --silent
 after_success:
