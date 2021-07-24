@@ -10,9 +10,9 @@ cache:
 before_install:
   - rm -rf xylsh_blog_source
   - git clone  https://github.com/weizhimiao/xylsh_blog_source.git xylsh_blog_source --recursive
+  - cd xylsh_blog_source && git submodule foreach git pull origin master
   - npm install -g hexo-cli
 install:
-  - cd xylsh_blog_source
   - npm install
 script:
   - hexo clean
