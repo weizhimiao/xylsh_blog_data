@@ -12,7 +12,6 @@ install:
   - cd xylsh_blog_source
   - npm install
 script:
-  - pwd
   - hexo clean
   - hexo algolia
   - hexo generate --silent
@@ -22,10 +21,17 @@ branches:
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  github_token: $GITHUB_TOKEN
   local_dir: xylsh_blog_source/docs
   repo: weizhimiao/weizhimiao.github.io
   target_branch: gh-pages
-  keep_history: true
+  keep_history: false
+  project_name: xylsh
+  email: zhimiao2008@gmail.com
+  name: zhimiao
+  committer_from_gh: false
+  allow_empty_commit: true
+  verbose: true
   on:
     branch: master
+
