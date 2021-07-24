@@ -14,7 +14,7 @@ Systemd是一个系统管理守护进程、工具和库的集合，用于取代S
 
 在Linux生态系统中，Systemd被部署到了大多数的标准Linux发行版中(redhat、CentOS、fedora)，只有为数不多的几个发行版尚未部署。Systemd通常是所有其它守护进程的父进程，但并非总是如此。
 
-![使用Systemctl管理Linux服务](https://dn-linuxcn.qbox.me/data/attachment/album/201507/30/210221zg6czg8yogegegay.jpg)
+![使用Systemctl管理Linux服务](/images/systemctl.jpg)
 
 本文旨在阐明在运行systemd的系统上“如何控制系统和服务”。
 
