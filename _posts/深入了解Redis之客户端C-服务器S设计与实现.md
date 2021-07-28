@@ -18,7 +18,7 @@ categories:
 ## 客户端
 
 对于每个与服务器进行连接的客户端，服务器都为这些客户端建立了相应的 `redisClient` 结构（客户端状态），这个结构保存了客户端当前的状态信息。
-```
+```c
 typedef struct redisClent{
 
   // ...
@@ -54,7 +54,7 @@ typedef struct redisClent{
 
 `Redis`服务器状态结构的`clients`属性是一个链表，这个链表保存了所有与服务器连接的客户端的状态结构(`redisClient`)，对客户端执行批量操作或者查找某个指定的客户端，都可以通过遍历 `clients` 链表来完成
 
-```
+```c
 struct redisServer {
   //...
 
@@ -137,11 +137,11 @@ struct redisServer {
 如图所示，用户在客户端中键入一个命令请求时，客户端会将这个命令请求转换成协议格式，然后通过连接到服务器的套接字，将协议格式的命令发送服务器。
 
 示例，假设用户在客户端键入了命令：
-```
+```bash
 SET KEY VALUE
 ```
 那么客户端会将这个命令转换成协议格式
-```
+```bash
 *3\r\n$3\r\nSET\r\n$3\r\nKEY\r\n$5\r\nVALUE\r\n
 ```
 然后将这段协议内容发送给服务器。
@@ -244,12 +244,12 @@ SET KEY VALUE
 服务器在用 `initServerConfig` 函数初始化完 `server` 变量之后，就会载入用户给指定的配置参数和配置文件，并根据用户设定的配置，对 `server` 变量相关属性进行修改：
 
 例如，
-```
+```bash
 $ redis-server --port 10086
 ```
 那么我们就会修改了服务器默认的运行端口号。
 
-```
+```bash
 $ redis-server redis.conf
 ```
 按照配置文件中的配置，修改 `server` 变量属性。
@@ -277,7 +277,7 @@ $ redis-server redis.conf
 
 当`iniServer `函数执行完毕之后，服务器会用 `ASCII`字符在日志中打印出`Redis`的图标，以及Redis的版本信息。
 
-```
+```bash
 root@5254004e45d0:/srv/rorapps/redis/redis-2.8.15# src/redis-server
 [16445] 16 Sep 09:54:32.684 # Warning: no config file specified, using the default config. In order to specify a config file use src/redis-server /path/to/redis.conf
 [16445] 16 Sep 09:54:32.686 * Increased maximum number of open files to 10032 (it was originally set to 1024).
@@ -312,12 +312,12 @@ root@5254004e45d0:/srv/rorapps/redis/redis-2.8.15# src/redis-server
 - 相反的如果服务器没有采用`AOF`方式的持久化方式，那么服务器使用`RDB`文件来还原服务器数据库状态。
 
 当服务器完成数据库的还原操作之后，服务器将在日志中打印出载入文件并还原数据库状态所耗费的时长
-```
+```bash
 [5244] 21 Nov 22:43:49.084 * DB loaded from disk: 0.067 seconds
 ```
 #### 执行事件循环
 初始化的最后一步，服务器将打印以下日志，
-```
+```bash
 [5244] 21 Nov 22:43:49.084 * The server is now ready to accept connections on port  6379
 ```
 并开始执行服务器的时间循环（`loop`）
