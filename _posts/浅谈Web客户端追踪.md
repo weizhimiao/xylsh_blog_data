@@ -18,9 +18,9 @@ Web客户端追踪，主要是指用户使用客户端（通常是指浏览器�
 
 当你网购时，即便没有登录，关掉浏览器后购物车的物品也不会消失；当你访问其他新闻、娱乐网站时，弹出的广告往往都是近期浏览购物网站的类似商品；稍有意识的用户可能会不定时清空浏览器缓存、使用“无痕浏览”、“隐私保护模式”等，然而仍然不能阻止类似广告的洗脑。
 
-<center>![img](http://n.sinaimg.cn/games/3ece443e/20170329/CCC2C265-F4A1-4D0E-AEE7-3DAC87997A54.png)</center>
+![img](http://n.sinaimg.cn/games/3ece443e/20170329/CCC2C265-F4A1-4D0E-AEE7-3DAC87997A54.png)
 
-<center>![img](http://n.sinaimg.cn/games/3ece443e/20170329/4809C3B6-4DAD-49A8-9AE5-3B59C15E44A7.png)</center>
+![img](http://n.sinaimg.cn/games/3ece443e/20170329/4809C3B6-4DAD-49A8-9AE5-3B59C15E44A7.png)
 
 现实世界可通过体貌特征、身份证件、生物特征（如指纹信息）等手段对用户进行唯一性识别，Web世界主要通过Cookies、客户端指纹等技术进行识别。
 
@@ -36,21 +36,21 @@ Cookie，中文翻译为小甜饼，有时也用复数形式Cookies，在Web世�
 
 `C:\Users\user\AppData\Local\Microsoft\Windows\TemporaryInternet Files\`文件夹下。
 
-<center>![img](http://n.sinaimg.cn/games/3ece443e/20170329/90ADED7C-F517-4460-AAF4-4052AF293B63.png)</center>
+![img](http://n.sinaimg.cn/games/3ece443e/20170329/90ADED7C-F517-4460-AAF4-4052AF293B63.png)
 
 
 以添加购物车为例，Cookies的大致利用过程可表示为：
 - ①、用户第一次访问购物网站：
 
-<center>![img](http://n.sinaimg.cn/games/3ece443e/20170329/5FD30CF8-5A10-454A-924A-0E51431A95FB.png)</center>
+![img](http://n.sinaimg.cn/games/3ece443e/20170329/5FD30CF8-5A10-454A-924A-0E51431A95FB.png)
 
 - ②、用户第二次访问网站：
 
-<center>![img](http://n.sinaimg.cn/games/3ece443e/20170329/1F01FC18-7FAB-4DE7-88DF-4BCBDE1F5979.png)</center>
+![img](http://n.sinaimg.cn/games/3ece443e/20170329/1F01FC18-7FAB-4DE7-88DF-4BCBDE1F5979.png)
 
 - ③、浏览器查看Cookies如下：
 
-<center>![img](http://n.sinaimg.cn/games/3ece443e/20170329/909A1F2B-3584-49CA-9446-8BD5E9685565.png)</center>
+![img](http://n.sinaimg.cn/games/3ece443e/20170329/909A1F2B-3584-49CA-9446-8BD5E9685565.png)
 
 
 #### 2)  Evercookie
@@ -61,17 +61,17 @@ Cookie，中文翻译为小甜饼，有时也用复数形式Cookies，在Web世�
 
 https://github.com/samyk/evercookie
 
-<center>![img](http://n.sinaimg.cn/games/3ece443e/20170329/3D9E61BC-FFE2-4FDF-8755-2BC7F293ABD4.png)</center>
+![img](http://n.sinaimg.cn/games/3ece443e/20170329/3D9E61BC-FFE2-4FDF-8755-2BC7F293ABD4.png)
 
 #### 3)  Cookie同步
 
 Cookie同步是指用户访问某A网站时，该网站通过页面跳转等方式将用户的Cookie发送到B网站，使得B网站获取到用户在A网站的用户隐私信息，然后通过Ad Network等一系列平台进行有效的广告推送服务。
 
-<center>![img](http://n.sinaimg.cn/games/3ece443e/20170329/81117524-6CBE-4EBF-B2E8-F6CFDED2C069.png)</center>
+![img](http://n.sinaimg.cn/games/3ece443e/20170329/81117524-6CBE-4EBF-B2E8-F6CFDED2C069.png)
 
 研究人员通过访问了Alexa排名前1500网站，发现两个追踪者进行Cookie同步以后，可以把数据完全共享，就像是一个追踪者一样。（详见参考地址[2]）
 
-<center>![img](http://n.sinaimg.cn/games/3ece443e/20170329/13E3C6AC-ACC4-4D12-B33E-F14FF233F9D7.png)</center>
+![img](http://n.sinaimg.cn/games/3ece443e/20170329/13E3C6AC-ACC4-4D12-B33E-F14FF233F9D7.png)
 
 Cookie越来越受限制，不少安全工具甚至是浏览器都允许或者引导关闭追踪Cookie，浏览器指纹追踪渐渐成为了Web追踪的重要技术手段。
 
@@ -85,9 +85,9 @@ Cookie越来越受限制，不少安全工具甚至是浏览器都允许或者�
 
 可以在该网址进行查看测试，https://www.whatismybrowser.com/
 
-<center>![img](http://n.sinaimg.cn/games/3ece443e/20170329/761F97FB-C31C-49ED-91F9-0361F0DF4A26.png)</center>
+![img](http://n.sinaimg.cn/games/3ece443e/20170329/761F97FB-C31C-49ED-91F9-0361F0DF4A26.png)
 
-<center>![img](http://n.sinaimg.cn/games/3ece443e/20170329/BE609BB4-53EE-4115-BA93-40CD9C243972.png)</center>
+![img](http://n.sinaimg.cn/games/3ece443e/20170329/BE609BB4-53EE-4115-BA93-40CD9C243972.png)
 
 #### 2)  高级指纹
 
@@ -97,23 +97,23 @@ Cookie越来越受限制，不少安全工具甚至是浏览器都允许或者�
 
 Canvas（画布），是HTML5中一种动态绘图的标签，可以使用其生成高级图片，官网有众多绘画事例，如下图。
 
-<center>![img](http://n.sinaimg.cn/games/3ece443e/20170329/AAC806FA-2B19-4735-932F-80D47366E009.png)</center>
+![img](http://n.sinaimg.cn/games/3ece443e/20170329/AAC806FA-2B19-4735-932F-80D47366E009.png)
 
 2014年9月，ProPublica报道：新型的Canvas指纹追踪正在被用到“上到白宫，下到YouPorn”等众多网站，众多重要网站都部署了Canvas指纹追踪。
 
-<center>![img](http://n.sinaimg.cn/games/3ece443e/20170329/4EFB75A4-9BF9-4E43-A9B4-D0F17BC3984D.png)</center>
+![img](http://n.sinaimg.cn/games/3ece443e/20170329/4EFB75A4-9BF9-4E43-A9B4-D0F17BC3984D.png)
 
-<center>![img](http://n.sinaimg.cn/games/3ece443e/20170329/BD836DFD-178E-446F-A71F-C2DF37A2DD15.png)</center>
+![img](http://n.sinaimg.cn/games/3ece443e/20170329/BD836DFD-178E-446F-A71F-C2DF37A2DD15.png)
 
 利用Canvas进行追踪的过程大致如下：
 
-<center>![img](http://n.sinaimg.cn/games/3ece443e/20170329/B8554485-29B1-4B8A-89AB-8550371CE09A.png)</center>
+![img](http://n.sinaimg.cn/games/3ece443e/20170329/B8554485-29B1-4B8A-89AB-8550371CE09A.png)
 
 基于Canvas绘制特定内容的图片，使用canvas.toDataURL()方法获得图片内容的base64编码（对于PNG格式的图片，以块(chunk)划分，最后一块是32位CRC校验）作为唯一性标识，如下图。
 
-<center>![img](http://n.sinaimg.cn/games/3ece443e/20170329/1BDA6AFA-B37C-400E-AE2F-71B13F76E4F9.png)</center>
+![img](http://n.sinaimg.cn/games/3ece443e/20170329/1BDA6AFA-B37C-400E-AE2F-71B13F76E4F9.png)
 
-<center>![img](http://n.sinaimg.cn/games/3ece443e/20170329/7B8514B0-881B-4880-B297-918CB3B72A4C.png)</center>
+![img](http://n.sinaimg.cn/games/3ece443e/20170329/7B8514B0-881B-4880-B297-918CB3B72A4C.png)
 
 ***Canvas指纹的原理大致如下：***
 
@@ -137,12 +137,12 @@ HTML5提供给JavaScript编程用的AudioAPI则让开发者有能力在代码中
 
 方法一：生成音频信息流(三角波)，对其进行FFT变换，计算SHA值作为指纹，音频输出到音频设备之前进行清除，用户毫无察觉。
 
-<center>![img](http://n.sinaimg.cn/games/3ece443e/20170329/38DBB916-AAF4-42E1-B7B4-11A3F9DC3F39.png)</center>
+![img](http://n.sinaimg.cn/games/3ece443e/20170329/38DBB916-AAF4-42E1-B7B4-11A3F9DC3F39.png)
 
 
 方法二：生成音频信息流（正弦波），进行动态压缩处理，计算MD5值。
 
-<center>![img](http://n.sinaimg.cn/games/3ece443e/20170329/038BF410-893D-4D20-B62A-24FECB62A794.png)</center>
+![img](http://n.sinaimg.cn/games/3ece443e/20170329/038BF410-893D-4D20-B62A-24FECB62A794.png)
 
 
 AudioContext指纹基本原理：
@@ -164,9 +164,9 @@ Web世界的指纹碰撞不可避免，将上述基本指纹和高级指纹综�
 
 测试地址：https://panopticlick.eff.org/
 
-<center>![img](http://n.sinaimg.cn/games/3ece443e/20170329/2959BA38-D4E7-4E17-BDE4-3A562ABB1D21.png)</center>
+![img](http://n.sinaimg.cn/games/3ece443e/20170329/2959BA38-D4E7-4E17-BDE4-3A562ABB1D21.png)
 
-<center>![img](http://n.sinaimg.cn/games/3ece443e/20170329/C748D9A2-26B7-4205-9A39-652AE9DAD763.png)</center>
+![img](http://n.sinaimg.cn/games/3ece443e/20170329/C748D9A2-26B7-4205-9A39-652AE9DAD763.png)
 
 ### 3. 跨浏览器指纹
 
@@ -186,9 +186,9 @@ WebRTC（网页实时通信，Web Real Time Communication），是一个支持�
 
 基于WebRTC的实时通讯功能，可以获取客户端的IP地址，包括本地内网地址和公网地址。其原理是利用到RTCPeerConnection的API，大致函数如下：
 
-<center>![img](http://n.sinaimg.cn/games/3ece443e/20170329/369C0E01-4122-4B75-BCAA-00C6026C1378.png)</center>
+![img](http://n.sinaimg.cn/games/3ece443e/20170329/369C0E01-4122-4B75-BCAA-00C6026C1378.png)
 
-<center>![img](http://n.sinaimg.cn/games/3ece443e/20170329/701F38B8-C7A0-49AE-8676-6053F8F0EF4D.png)</center>
+![img](http://n.sinaimg.cn/games/3ece443e/20170329/701F38B8-C7A0-49AE-8676-6053F8F0EF4D.png)
 
 
 利用WebRTC能做的事情还远不止这些，比如使用其探测扫描内网信息，进行语音、视频交流，更多技术细节请参考：
